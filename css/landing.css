@@ -1,0 +1,663 @@
+html 
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0;
+    overflow:hidden; 
+    background-color: #212121;
+}
+/* width */
+body ::-webkit-scrollbar {
+  height: 5px; /*for horizonatal scrollbar*/
+  width: 5px;
+}
+
+/* Track */
+body ::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+/* Handle */
+body ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 2.5px; 
+}
+
+/* Handle on hover */
+body ::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 0, 0); 
+}
+section /*-1*/
+{
+    /* abstract properties*/
+    display: block;
+    overflow-y: scroll;
+    z-index: -1; 
+    /* visible properties*/
+    background-image: linear-gradient(#212121,#3C3C3C);
+
+    width: 99.5vw;
+    height: 99.5vh;
+    
+    border: 1px solid black;
+    margin: 0 auto;
+
+    font-size: 0; 
+    text-align: center;  
+}  
+a
+{
+  font-family:"Poppins";
+}
+.inavbar  /*1*/
+{
+    /* abstract properties*/
+    display: block;
+    overflow: auto;
+    position: fixed;
+    z-index: 10;
+    /* visible properties*/
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+
+    background-color:#212121bb;
+    text-align: center;
+}  
+.inavbar a 
+{
+    /* abstract properties*/
+    display: block;
+    float:right;
+    /* visible properties*/
+    color: #ffd700;
+    font-size: 20px;
+    text-decoration: none;
+
+    padding-top: 32px;
+    padding-left: 30px;
+    padding-right: 40px;  
+}
+.inavbar a:hover
+{
+    color:white;
+}
+.active 
+{
+    background-color: rgba(76, 175, 79, 0);
+}
+.inavbar button
+{
+    display: block;
+
+    border:none;
+    background-color: #212121bb;
+    color:gold;
+    font-size: 20px;
+    cursor:pointer;
+
+    padding-top: 32px;
+    padding-left: 30px;
+    padding-right: 40px;  
+}
+.inavbar button:hover
+{
+    color:white;
+}
+
+/* for the responsive */ 
+
+.down-arrow1
+{
+    /* abstract properties*/
+    display: block;
+    position: absolute;
+    z-index:3;
+
+    /* visible properties*/
+    bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height:30px;
+
+    cursor: pointer;
+    
+}
+.down-arrow1 a 
+{
+    /* abstract properties*/
+    display: block;
+    /* visible properties*/
+    color: gold;
+    font-size: 40px;
+    text-decoration: none;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;  
+}
+.down-arrow1 a:hover
+{
+    color:white;
+}
+.center 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.center-logo 
+{
+    padding-top:6vh;
+    left:45vw;
+    display: block;
+    position: absolute;
+    width:10%;  
+    z-index:15; 
+}
+
+.center-main-img 
+{
+    /*padding-top:5vh;*/
+    top:20vh;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    z-index:6;  
+}
+.sidenav
+{
+    position: fixed;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    z-index:101;
+    top:0;left:0;
+
+    background-color:#212121;
+    width:0px;
+    padding-top:100px;
+    height:100%;
+    transition: 0.5s;
+}
+.sidenav a
+{
+    float: center;
+    display: block;
+    
+    color: white;
+    font-size:20px;
+    font-family:"Poppins";
+    padding: 8px 8px 8px 32px;
+    
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: 0.8s;
+}
+.sidenav a:hover
+{
+    color:gold;
+}
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+.sidenav i
+{
+    padding: 8px 8px 8px 32px;
+    color:gold;
+    font-size: 25px;
+}
+  
+.grid-container 
+{
+    top:18vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px 310px 310px 310px;
+    grid-template-rows: 65vh 0px;
+    grid-gap: 15px;
+    background-color: rgba(33, 149, 243, 0);
+    padding: 10px;
+    overflow-x:scroll;
+    z-index:7;
+}
+  
+.grid-container > div 
+{
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 30px;
+    overflow-y:scroll;
+    color:white;
+    border-radius:10px;
+    background-image: linear-gradient(360deg,#212121,rgba(60, 60, 60, 0.5));  
+    z-index:7;  
+}
+.grid-container > div button
+{
+    display:block;
+    position:sticky;
+    left:7vw;
+    overflow:hidden;
+    background-color:rgba(255, 217, 0, 0);
+    font-size:30px;
+    box-shadow: 0px 6px 12px #00000029;
+    border: 2.5px solid gold;
+    cursor:pointer;
+    padding: 5px 25px 5px 25px;
+    border-radius: 10px;
+    z-index:7;
+    text-align: left;
+    font: Regular 20px/30px Poppins;
+    letter-spacing: 2px;
+    color: #D9C800;
+    text-shadow: 0px 6px 12px #00000029;
+    font-size:3vh;
+}
+
+.grid-container > div button:hover
+{
+    background-color: gold;
+    color:white;
+}
+.grid-container > div p
+{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size:2vh;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding:3px 3px 3px 5px;
+}
+.center-txt 
+{   
+    padding-top:28vh;
+    display: block;
+    z-index:0;
+    position: absolute;
+    width:100%;
+}
+.nav-arrow-p2
+{
+    display:block;
+    position:relative;
+    bottom:-18vh;
+    left:48%;
+
+    cursor:pointer;
+    padding:1px 1px 1px 1px;
+    background-color: #21212100;
+    color:#ffd700;
+    border:none;
+    font-size:40px;
+    font-family:"Poppins"; 
+}
+.nav-arrow-p2:hover
+{
+  color:white;
+}
+* 
+{
+  box-sizing: border-box;
+}
+
+.header 
+{
+  text-align: center;
+  padding: 45px;
+}
+
+.row 
+{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column 
+{
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img 
+{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.column img.hover-shadow 
+{
+  transition: 0.3s;
+}
+
+.hover-shadow:hover 
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* The Modal (background) */
+.modal 
+{
+  display: none;
+  position: fixed;
+  z-index: 20;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe00;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  display:block;
+  text-align:center;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: fixed;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides 
+{
+  display: none;
+}
+.cursor 
+{
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0px 6px 12px #21212130;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev 
+{
+  left: 0;
+}
+/* Position the "next button" to the right */
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover 
+{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext 
+{
+  color: #f2f2f2;
+  font-size: 18px;
+  padding: 8px 12px;
+  font-family:"Poppins";
+  position: absolute;
+  background-color: #21212133;
+  top: 0;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.overlay 
+{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 25;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#212121,#3C3C3C);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay .grid-container
+{   
+    left:5%;
+    padding-bottom: 5vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 500px 800px;
+    grid-template-rows: 70vh 0px;
+    grid-gap: 15px;
+    background-color: rgba(33, 149, 243, 0);
+    padding: 0px;
+    overflow-x:scroll;
+    z-index:25;
+    transition: 0.3s;
+    
+}
+.overlay .grid-container > div 
+{
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 30px;
+    overflow-y:scroll;
+    color:white;
+    border-radius:10px;
+    background-image: linear-gradient(360deg,#212121,rgba(60, 60, 60, 0.5));  
+    z-index:7;  
+    box-shadow: 0px 6px 12px #00000029;
+}
+.overlay .grid-container > div p
+{
+    text-align: left;
+    font-family: 'Libre Baskerville', serif;
+    font-size:2vh;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding:3px 3px 3px 5px;
+}
+
+
+.overlay .grid-container > div h1
+{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    font-size:30px;
+    color:#212121;
+}
+.overlay .grid-container > div img
+{
+    /*text-align:left;
+    display: block;*/
+
+    position: absolute;
+    height:300px;
+    left:-90px;
+    bottom:16px;
+    width:auto;
+}
+.overlay .grid-container button
+{
+    border:2px solid gold;
+    background-color: #00000000;
+    color:gold;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    box-shadow: 0px 6px 12px #00000029;
+    cursor:pointer;
+    display:inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+.overlay .grid-container button a
+{
+    /*border:2px solid gold;*/
+    background-color: #00000000;
+    color:gold;
+    font-family: 'Poppins';
+    font-size: 20px;
+    /*padding: 5px 20px 5px 20px;*/
+    /*box-shadow: 0px 6px 12px #00000029;*/
+    cursor:pointer;
+    /*display:inline-block;*/
+    position: relative;
+    /*transition: 0.3s;*/
+    text-decoration:none;
+}
+.overlay .grid-container button:hover
+{
+    color:#212121;
+    background-color: gold;
+}
+.overlay .grid-container button a:hover
+{
+    font-family: 'Poppins';
+    color:#212121;
+    background-color: gold;
+}
+.overlay a 
+{
+    font-family: 'Libre Baskerville', serif;
+    text-decoration: none;
+    font-size: 10px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus 
+{
+    color: #f1f1f1;
+}
+.overlay .closebtn 
+{
+    color:gold;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 50px;
+}
+
+@media screen and (max-height: 450px) 
+{
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn 
+    {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) 
+{
+    .inavbar a 
+    {
+        float: none;
+        display:none;
+
+    }
+    .center-main-img
+    {
+       width:60%;
+    }
+    .center-logo
+    {
+       width:25%;
+       padding-top:5vh;
+    }
+    .sidenav a
+    {
+      font-family: 'Poppins', sans-serif;
+    }
+    .grid-container 
+    {
+      grid-template-columns: 290px 290px 290px 290px 290px 290px 290px;
+      grid-template-rows: 450px 0px;
+      grid-gap: 15px;
+    }
+    .overlay .grid-container
+    {
+      grid-template-columns: 400px 600px;
+      grid-template-rows: 50vh 0px;
+      overflow:auto;
+    }
+    .overlay .grid-container > div img
+    {
+      height:150px;
+      width:auto;
+      left:-60px;
+    }
+
+}
+
