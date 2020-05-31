@@ -93,7 +93,7 @@ a
     display: block;
 
     border:none;
-    background-color: #212121bb;
+    background-color: #21212100;
     color:gold;
     font-size: 20px;
     cursor:pointer;
@@ -648,7 +648,7 @@ a
     }
     .overlay .grid-container
     {
-      grid-template-columns: 400px 600px;
+      grid-template-columns: 400px 400px;
       grid-template-rows: 50vh 0px;
       overflow:auto;
     }
