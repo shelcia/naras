@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Narasimhan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="inavbar">
+        <button class="active" style ="float:left" onclick="openNav()"><i class="fa fa-fw fa-bars"></i></button>      
+        <a href="#page-1"><i class="fa fa-fw fa-instagram"></i></a> 
+        <a href="#page-2"><i class="fa fa-fw fa-comments"></i></a> 
+        <a href="#page-3"><i class="fa fa-fw fa-phone"></i></a>
+    </div>
+
+    <div id="mySidepanel" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="javascript:void(0)" onclick="openDoctrine();closeNav();">About Me</a>
+        <a href="#blog">Writer's blog</a>
+        <a href="#gallery">Polaroids</a>
+        <br>
+        <i class="fa fa-fw fa-instagram"></i>
+        <i class="fa fa-fw fa-comments"></i>
+        <i class="fa fa-fw fa-phone"></i>    
+    </div>
+
+    <div id="doctrineNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDoctrine()">&times;</a>
+            <div class="grid-container">
+                <div style="background-image: linear-gradient(360deg,gold,gold)">
+                    <h1>AVPL Narasimhan</h1>
+                    <p style="color:black;text-align: right">
+                        Electronics and Communication Engineer <br>
+                        Email:<b>edm18b040@iiitdm.ac.in</b><br>
+                        Phone No:<b> +91 95661 60554</b><br><br><br><br>
+                        Feel free to check my other works<br><br><br>
+                        <a href="#"><i class="fa fa-fw fa-instagram"></i> Poem and polaroids</a>
+                        <a href="#"><i class="fa fa-fw fa-instagram"></i> Candid Feelings</a>
+                    </p>
+                    <img src="others/main.png" alt="Narasimhan">
+                </div>
+    
+                <div>
+                    <h1 style="font-size:30px;color:gold">
+                        About Me
+                    </h1>
+                    <p>
+                        I am an 19-year-old engineering student with a confident passion for 
+                        writing. Mostly, all the works I have done are by myself, for myself 
+                        and not for any agency. I write what I feel, and that makes me feel 
+                        good about writing, it knows no bounds and it never will. Although, I 
+                        did a couple of product documentation to explore other niches of 
+                        writing. I do photography as my hobby and express every picture with 
+                        a brief description of it. I am also a bibliophile, and the love for new 
+                        novels and books increase day by day for me.  I am right now working 
+                        on a story which will hopefully release in the second half of next year. 
+                        Do head to the blog section to find more articles of mine! Happy 
+                        reading. Feel free to contact me if you want any mental support or 
+                        anything for that matter.                            
+                    </p><br><br>
+                    <button class="button" style="left:0px" onclick="closeDoctrine()">
+                        <a href="#gallery">Gallery</a>
+                    </button>
+                    <button class="button" onclick="closeDoctrine()">
+                        <a href="#blog">Blog</a>
+                    </button>
+                </div>
+            </div>
+    </div>
+
+    <section>
+        <div id="#">
+            <button style="cursor:pointer;background-color: rgba(255, 217, 0, 0);border:none;width: 100%" onclick="openDoctrine()">
+                <img src="others/2.png" alt="image" class="center-main-img">
+            </button>
+            <div class="down-arrow1">
+                <a class ="center" href="#blog"><i class="fa fa-fw fa-caret-down"></i></a>   
+            </div>
+        </div> 
+    </section>
+
+    <section>
+        <div id="blog">
+            <!--<img src="others/main.png" alt="image" class="center1">-->
+            <a href="#">
+                <img src="others/1.png" alt="image" class="center-logo">
+            </a>
+            
+            <img src="others/text..png" class="center-txt">
+            <div class="grid-container">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <button> More </button>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <button> More </button>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <button> More </button>
+            </div>  
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <button> More </button>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <button> More </button>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <button> More </button>
+            </div> 
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <button> More </button>
+            </div> 
+            </div>
+            <a href="#gallery">
+                <button class="nav-arrow-p2"><i class="fa fa-fw fa-caret-down"></i></button>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <div id="gallery">
+            <a href="#">
+                <img src="others/1.png" alt="image" class="center-logo">
+            </a>
+
+            <!-- Header -->
+<div class="header">
+    <h1>Photo Gallery</h1>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="img/1.jpg" style="width:100%;"onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img src="img/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      <img src="img/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      <img src="img/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      <img src="img/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      <img src="img/6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      <img src="img/7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/3.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="img/2.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      <img src="img/1.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      <img src="img/6.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      <img src="img/7.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      <img src="img/4.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+      <img src="img/5.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+    </div>  
+    <div class="column">
+      <img src="img/5.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+      <img src="img/6.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+      <img src="img/2.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+      <img src="img/7.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+      <img src="img/3.jpg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+      <img src="img/1.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+      <img src="img/4.jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/2.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+      <img src="img/1.jpg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+      <img src="img/4.jpg" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+      <img src="img/3.jpg" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+      <img src="img/6.jpg" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+      <img src="img/7.jpg" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+      <img src="img/5.jpg" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      
+      <div class="modal-content">
+    
+          <div class="mySlides">
+              <div class="numbertext">1 / 28</div>
+              <img src="img/1.jpg" style="width:auto;max-height:80vh">
+          </div>  
+          <div class="mySlides">
+              <div class="numbertext">2 / 28</div>
+              <img src="img/2.jpg" style="width:auto;max-height:80vh">
+          </div> 
+          <div class="mySlides">
+              <div class="numbertext">3 / 28</div>
+              <img src="img/3.jpg" style="width:auto;max-height:80vh">
+          </div>    
+          <div class="mySlides">
+              <div class="numbertext">4 / 28</div>
+              <img src="img/4.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">5 / 28</div>
+              <img src="img/5.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">6 / 28</div>
+              <img src="img/6.jpg" style="width:auto;max-height:80vh">
+          </div>    
+          <div class="mySlides">
+              <div class="numbertext">7 / 28</div>
+              <img src="img/7.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">8 / 28</div>
+              <img src="img/3.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">9 / 28</div>
+              <img src="img/2.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">10 / 28</div>
+              <img src="img/1.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">11 / 28</div>
+              <img src="img/6.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">12 / 28</div>
+              <img src="img/7.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">13 / 28</div>
+              <img src="img/4.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">14 / 28</div>
+              <img src="img/5.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">15 / 28</div>
+              <img src="img/5.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">16 / 28</div>
+              <img src="img/6.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">17 / 28</div>
+              <img src="img/2.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">18 / 28</div>
+              <img src="img/7.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">19 / 28</div>
+              <img src="img/3.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">20 / 28</div>
+              <img src="img/1.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">21 / 28</div>
+              <img src="img/4.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">22 / 28</div>
+              <img src="img/2.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">23 / 28</div>
+              <img src="img/1.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">24 / 28</div>
+              <img src="img/4.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">25 / 28</div>
+              <img src="img/3.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">26 / 28</div>
+              <img src="img/6.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">27 / 28</div>
+              <img src="img/7.jpg" style="width:auto;max-height:80vh">
+          </div>
+          <div class="mySlides">
+              <div class="numbertext">28 / 28</div>
+              <img src="img/5.jpg" style="width:auto;max-height:80vh">
+          </div>
+  
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>      
+      </div>
+  </div>
+    <div class="header">
+        <h1>Photo Gallery</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+    </div>
+            
+    </div>
+    </section>     
+    </div>
+   
+    <script src="js/sidebar.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/collapse.js"></script>
+
+
+</body>
+</html>
