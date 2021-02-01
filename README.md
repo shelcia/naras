@@ -1,3 +1,3 @@
 # naras
 
-naras portfolio https://narasportfolio.herokuapp.com/
+naras portfolio https://naras-portfolio.netlify.app/
