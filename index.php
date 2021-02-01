@@ -1,3 +1,3 @@
 <?php
-include("landing.html");
+include("index.html");
 ?>
